@@ -1,0 +1,10 @@
+node_modules/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+runtime/
+captures/
+README_FOR_CODEX.txt
+docs/live-acceptance-*.json

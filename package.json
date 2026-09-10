@@ -1,0 +1,19 @@
+{
+  "name": "roon-desktop-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Windows Roon Remote desktop control with observed actions, local OCR and verified navigation.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "zod": "3.25.76",
+    "pngjs": "7.0.0"
+  }
+}
