@@ -114,3 +114,38 @@ Layout:
 - Preserve ample negative space and avoid overcrowding.
 - Use correct Traditional Chinese glyphs and exact Latin spelling.
 ```
+
+## 2026-09-10 — `roon-desktop-mcp-use-cases.png`
+
+Provenance: OpenAI built-in ImageGen (`image_gen` tool), one original generation call. The existing banner and social assets were visually inspected for style only and were not passed to the generator. No CLI, API script, private screenshot, account data, or music-library data was used.
+
+```text
+Use case: infographic-diagram
+Asset type: public GitHub README use-case illustration
+
+Primary request: Create one original, polished, wide landscape conceptual illustration at approximately 16:7 aspect ratio. It is a three-panel visual narrative about organizing playlists, navigating a music interface, and inspecting settings. This is explicitly a conceptual illustration, not a screenshot, not a representation of any actual Roon screen, and not a claim that an action succeeded.
+
+Scene/backdrop: warm off-white field with generous whitespace. Three evenly spaced floating desktop-screen cards across the canvas, separated by subtle vertical rhythm and breathing room. Slight soft shadows and restrained translucent lavender circles or blocks behind cards for depth.
+
+Style/medium: premium restrained editorial technology illustration; crisp thin charcoal lines, warm-white surfaces, muted lavender accents, barely dimensional interface cards. Match a minimal modern README visual system. No photorealism. No neon, cyberpunk, robots, circuit boards, or glossy glass clutter.
+
+Panel 1, left: a generic list of blank abstract rows, one row highlighted lavender, a small neutral drag handle, and a black arrow cursor positioned near the handle. This describes sorting only; no song title, artist, track count, album cover, user name, source, path, or operating state.
+Panel 2, center: a generic browse grid of abstract music-art tiles made only from soft geometric color blocks, with a small simple search symbol. No recognizable album covers, artists, music data, or brand marks.
+Panel 3, right: a generic settings card with quiet horizontal controls, toggles, sliders, and a small magnifier inspecting one control. It must not imply that any setting was read, changed, enabled, disabled, or verified. Do not show values, check marks, success badges, numbers, status indicators, account details, paths, or logos.
+
+Color palette: warm ivory/off-white, charcoal near-black, soft neutral gray, restrained dusty lavender. Use abundant empty space and consistent fine-line iconography.
+
+Typography and text: Render these exact Traditional Chinese panel headings, each prominently above its corresponding card, from left to right:
+"歌單整理"
+"畫面導覽"
+"設定檢視"
+Render these exact small English subtitles directly below their corresponding heading:
+"Playlist"
+"Navigation"
+"Settings"
+Add exactly one tiny caption at the bottom center:
+"示意圖"
+Do not render any other text, letters, words, digits, interface labels, product names, URLs, account names, operating-system labels, music metadata, logos, watermarks, badges, claims, titles, or captions.
+
+Composition/framing: extra-wide clean three-column layout with enough margins that all text is fully inside the canvas. The headings must be sharply legible and correctly spelled in Traditional Chinese. Cards can be lightly angled or layered but must stay clearly separate. The image should feel coherent with a restrained lavender/off-white/charcoal editorial tech identity, while visibly remaining a generic conceptual illustration.
+```
