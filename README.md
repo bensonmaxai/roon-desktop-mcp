@@ -56,24 +56,18 @@ flowchart LR
     A["① 觀察<br/>取得新畫面"] --> B["② 定位<br/>確認唯一目標"]
     B --> C["③ 操作<br/>只送出一次動作"]
     C --> D["④ 讀回<br/>確認實際結果"]
-    D --> E{"結果明確？"}
-    E -->|是| F["記錄結果"]
-    E -->|否| G["重新觀察與核對<br/>不重播輸入"]
-    G --> D
     classDef step fill:#f0ebfa,stroke:#8a76b4,color:#292334;
     classDef result fill:#eef5f0,stroke:#719982,color:#24382b;
-    classDef pending fill:#fff5e6,stroke:#ba9663,color:#4a3824;
-    class A,B,C,D step;
-    class F result;
-    class E,G pending;
+    class A,B,C step;
+    class D result;
 ```
 
-| 步驟 | 工具如何配合 |
-| --- | --- |
-| **觀察** | `desktop_observe` 取得截圖、可用的 UIA、Windows OCR 與視窗身分。 |
-| **定位** | `desktop_find` 或 agent 在仍有效的 frame 中確認目標。 |
-| **操作** | `desktop_act` / `desktop_navigate` 執行單一動作，以 `operation_id` 記錄狀態。 |
-| **讀回** | 重新觀察，必要時搭配完整 manifest 或既有 Roon API 讀回；`desktop_reconcile` 記錄呼叫端提供的結果證據，不自行做語意驗證。 |
+**結果不明時，重新觀察與核對，不重播輸入；確認後再記錄結果。**
+
+1. **觀察：** `desktop_observe` 取得截圖、可用的 UIA、Windows OCR 與視窗身分。
+2. **定位：** `desktop_find` 或 agent 在仍有效的 frame 中確認目標。
+3. **操作：** `desktop_act` / `desktop_navigate` 執行單一動作，以 `operation_id` 記錄狀態。
+4. **讀回：** 重新觀察，必要時搭配完整 manifest 或既有 Roon API 讀回；`desktop_reconcile` 記錄呼叫端提供的結果證據，不自行做語意驗證。
 
 Roon 主畫面多為 canvas，UIA 與 OCR 不一定能取得完整內容。因此工具會檢查 frame 與視窗身分，避免沿用失效位置；**一次點擊送達，還需要結果讀回才能判斷工作是否完成。**
 
